@@ -6,7 +6,7 @@ public class WordRepetitionMapCreator {
     public Map<String, Integer> createWordRepetitionMap(String sentence) {
 
         Map<String, Integer> result = new HashMap<>();
-        List<String> splitWords = List.of(sentence.toLowerCase().split("[ ,;.=]"));
+        List<String> splitWords = List.of(sentence.toLowerCase().split("[ ,;.=]+"));
 
         Set<String> uniqueWords = new HashSet<>(splitWords);
         int counter = 0;
